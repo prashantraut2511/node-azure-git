@@ -10,5 +10,10 @@ console.log('hello from server');
  res.render('./public/index.html');
 });
 
+app.get('/contact',function(req,res){
+console.log('Serving Contact');
+ res.render('./public/contact.html');
+});
+
 app.listen(port);
 console.log('Server Listening at port'+port);
